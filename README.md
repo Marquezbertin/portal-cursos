@@ -27,6 +27,10 @@ Portal unificado com todos os cursos gratuitos de tecnologia do **Bruno Bertin M
 - [Material Didático Completo](https://github.com/Marquezbertin/Material-Didatico-Tecnologia)
 - [Despertar QA](https://www.despertarqa.net/)
 
+### 🧑‍🏫 Apoio aos Professores
+- [Guia do Voluntário](https://marquezbertin.github.io/portal-cursos/pages/guia-voluntario.html)
+- [Plano de Aulas (8 encontros)](https://marquezbertin.github.io/portal-cursos/pages/plano-de-aulas.html)
+
 ## 🛠️ Tecnologias
 
 - HTML5 / CSS3 / JavaScript (ES6+)

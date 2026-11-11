@@ -8,6 +8,13 @@
   <meta property="og:title" content="Portal de Cursos Gratuitos — Bruno Bertin">
   <meta property="og:description" content="Todos os cursos de tecnologia em um só lugar. 100% gratuito.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://marquezbertin.github.io/portal-cursos/assets/img/og-portal.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portal de Cursos Gratuitos — Bruno Bertin">
+  <meta name="twitter:description" content="Todos os cursos de tecnologia em um só lugar. 100% gratuito.">
+  <meta name="twitter:image" content="https://marquezbertin.github.io/portal-cursos/assets/img/og-portal.png">
   <title>🎓 Portal de Cursos Gratuitos — Bruno Bertin</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
   <link rel="stylesheet" href="css/style.css">
@@ -25,6 +32,7 @@
         <a href="#cursos" class="nav-link">Cursos</a>
         <a href="#trilhas" class="nav-link">Trilhas</a>
         <a href="#materiais" class="nav-link">Materiais</a>
+        <a href="pages/guia-voluntario.html" class="nav-link">Voluntários</a>
         <a href="#sobre" class="nav-link">Sobre</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
@@ -140,6 +148,28 @@
           <button class="filter-btn" data-filter="Intermediário">🔵 Intermediário</button>
         </div>
       </div>
+
+      <!-- Filtros de público -->
+      <div class="filter-group">
+        <span class="filter-label">Público:</span>
+        <div class="filter-buttons" id="filterPublico">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="Crianças">👧 Crianças</button>
+          <button class="filter-btn" data-filter="Adolescentes">🧑 Adolescentes</button>
+          <button class="filter-btn" data-filter="Adultos">👨 Adultos</button>
+        </div>
+      </div>
+
+      <!-- Filtros de duração -->
+      <div class="filter-group">
+        <span class="filter-label">Duração da aula:</span>
+        <div class="filter-buttons" id="filterDuracao">
+          <button class="filter-btn active" data-filter="todos">Todas</button>
+          <button class="filter-btn" data-filter="30">⚡ 30 min</button>
+          <button class="filter-btn" data-filter="60">⏱ 60 min</button>
+          <button class="filter-btn" data-filter="90">🕐 90 min</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -160,6 +190,28 @@
 
   <!-- ===== MATERIAIS (Âncora) ===== -->
   <div id="materiais"></div>
+
+  <!-- ===== RECURSOS PARA AULAS ===== -->
+  <section class="recursos-section">
+    <div class="container">
+      <h2 class="section-title">Para quem dá as aulas</h2>
+      <p class="section-subtitle">Materiais de apoio para o voluntário preparar e conduzir cada encontro</p>
+      <div class="recursos-grid">
+        <a href="pages/guia-voluntario.html" class="recurso-card">
+          <span class="recurso-icon">🧑‍🏫</span>
+          <h3 class="recurso-title">Guia do Voluntário</h3>
+          <p class="recurso-desc">Passo a passo antes, durante e depois de cada aula — com dicas para manter a turma engajada.</p>
+          <span class="recurso-link">Ler guia →</span>
+        </a>
+        <a href="pages/plano-de-aulas.html" class="recurso-card">
+          <span class="recurso-icon">🗓️</span>
+          <h3 class="recurso-title">Plano de Aulas</h3>
+          <p class="recurso-desc">Cronograma modelo de 8 encontros com objetivo, duração e material de cada aula.</p>
+          <span class="recurso-link">Ver plano →</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== SOBRE ===== -->
   <section class="sobre-section" id="sobre">

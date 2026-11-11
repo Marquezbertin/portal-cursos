@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal unificado de cursos gratuitos de tecnologia — Projetos sociais, trilhas de programação e materiais didáticos para todas as idades.">
+  <meta name="author" content="Bruno Bertin Marquez">
+  <meta property="og:title" content="Portal de Cursos Gratuitos — Bruno Bertin">
+  <meta property="og:description" content="Todos os cursos de tecnologia em um só lugar. 100% gratuito.">
+  <meta property="og:type" content="website">
+  <title>🎓 Portal de Cursos Gratuitos — Bruno Bertin</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🎓</span>
+        <span class="logo-text">Portal de Cursos</span>
+      </a>
+      <nav class="nav">
+        <a href="#cursos" class="nav-link">Cursos</a>
+        <a href="#trilhas" class="nav-link">Trilhas</a>
+        <a href="#materiais" class="nav-link">Materiais</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <span class="theme-icon" id="themeIcon">🌙</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Aprenda Tecnologia<br><span class="hero-highlight">100% Gratuito</span></h1>
+      <p class="hero-subtitle">
+        Cursos completos de programação, dados, IA e muito mais.<br>
+        Para todas as idades — do iniciante ao avançado.
+      </p>
+      <div class="hero-actions">
+        <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
+        <a href="https://github.com/Marquezbertin" target="_blank" rel="noopener" class="btn btn-outline">
+          GitHub ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ESTATÍSTICAS ===== -->
+  <section class="stats" id="stats">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <span class="stat-number" id="statCursos">13</span>
+        <span class="stat-label">Cursos Disponíveis</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="statTrilhas">8</span>
+        <span class="stat-label">Trilhas de Conteúdo</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Gratuito e Aberto</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACESSO RÁPIDO ===== -->
+  <section class="quick-section">
+    <div class="container">
+      <div class="quick-grid">
+        <a href="https://notebook.google.com/" target="_blank" rel="noopener" class="quick-btn">
+          <span class="quick-icon">📓</span>
+          <span class="quick-text">
+            <strong>Google Notebook</strong>
+            <small>Acessar notebook</small>
+          </span>
+          <span class="quick-arrow">↗</span>
+        </a>
+        <a href="https://marquezbertin.github.io/certificados-tecnologia-sao-pedro/" target="_blank" rel="noopener" class="quick-btn">
+          <span class="quick-icon">📜</span>
+          <span class="quick-text">
+            <strong>Gerar Certificado</strong>
+            <small>Certificados São Pedro</small>
+          </span>
+          <span class="quick-arrow">↗</span>
+        </a>
+        <a href="https://marquezbertin.github.io/portfolio/" target="_blank" rel="noopener" class="quick-btn">
+          <span class="quick-icon">💼</span>
+          <span class="quick-text">
+            <strong>Portfólio</strong>
+            <small>Conheça meu trabalho</small>
+          </span>
+          <span class="quick-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUSCA E FILTROS ===== -->
+  <section class="filters-section" id="cursos">
+    <div class="container">
+      <h2 class="section-title">Explore os Cursos</h2>
+      <p class="section-subtitle">Encontre o curso ideal para você ou seus alunos</p>
+
+      <!-- Barra de busca -->
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar por nome, tema ou tecnologia..."
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Filtros de categoria -->
+      <div class="filter-group">
+        <span class="filter-label">Categoria:</span>
+        <div class="filter-buttons" id="filterCategoria">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="projeto-social">🏫 Projetos Sociais</button>
+          <button class="filter-btn" data-filter="trilha">💻 Trilhas</button>
+          <button class="filter-btn" data-filter="material">📚 Materiais</button>
+        </div>
+      </div>
+
+      <!-- Filtros de nível -->
+      <div class="filter-group">
+        <span class="filter-label">Nível:</span>
+        <div class="filter-buttons" id="filterNivel">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="Iniciante">🟢 Iniciante</button>
+          <button class="filter-btn" data-filter="Intermediário">🔵 Intermediário</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GRID DE CURSOS ===== -->
+  <section class="cursos-section">
+    <div class="container">
+      <div class="cursos-grid" id="cursosGrid">
+        <!-- Cards renderizados via JS -->
+      </div>
+      <p class="no-results" id="noResults" style="display:none;">
+        😕 Nenhum curso encontrado. Tente outra busca.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== TRILHAS (Âncora) ===== -->
+  <div id="trilhas"></div>
+
+  <!-- ===== MATERIAIS (Âncora) ===== -->
+  <div id="materiais"></div>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre-section" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre o Projeto</h2>
+      <div class="sobre-content">
+        <div class="sobre-text">
+          <p>
+            Olá! Sou <strong>Bruno Bertin Marquez</strong>, QA Analyst e educador voluntário.
+            Este portal reúne todos os meus cursos gratuitos de tecnologia em um só lugar.
+          </p>
+          <p>
+            Acredito que <strong>tecnologia é para todos</strong> — independente da idade, da cidade ou
+            da condição financeira. Cada curso aqui foi criado com carinho, baseado em evidência
+            científica e testado com alunos reais.
+          </p>
+          <p>
+            Do <strong>pensamento computacional</strong> para crianças de 8 anos até
+            <strong>IA e banco de dados</strong> para jovens e adultos — você encontra tudo aqui,
+            aberto, gratuito e pronto para usar.
+          </p>
+          <div class="sobre-links">
+            <a href="https://github.com/Marquezbertin" target="_blank" rel="noopener" class="btn btn-primary">
+              GitHub ↗
+            </a>
+            <a href="https://www.despertarqa.net/" target="_blank" rel="noopener" class="btn btn-outline">
+              Despertar QA ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">
+        🎓 Portal de Cursos Gratuitos — feito com ❤️ por
+        <a href="https://github.com/Marquezbertin" target="_blank" rel="noopener">Bruno Bertin Marquez</a>
+      </p>
+      <p class="footer-text footer-sub">
+        Todos os materiais são abertos e gratuitos sob licença MIT.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
